@@ -1,0 +1,24 @@
+@use "../presets" as *;
+
+@mixin unlist($m: 0, $p: 0) {
+  margin: $m;
+  padding: $p;
+
+  list-style: none;
+}
+
+@mixin border-style {
+  border-color: $color-orange-light;
+  border-radius: 20px 20px 20px 20px;
+}
+
+@mixin border-style-stand {
+  color: $color-orange-light;
+  border-color: $color-orange-light;
+  border-radius: 20px 20px 20px 20px;
+  background-color: rgba($color-white, 0.7);
+}
+
+@mixin box-shadow {
+  box-shadow: -3px 3px 20px -10px darken($color-gray-dark, 40%);
+}

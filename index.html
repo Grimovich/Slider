@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Подключаем шрифты Roboto и Roboto Slab c сервиса google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Slider</title>
+</head>
+
+<body>
+  <header class="header">
+    <div id="carousel" class="carousel">
+      <div class="header-content">
+        <div class="header-content__container">
+          <h1 class="header-content__title">HOMETOWN</h1>
+          <div class="header-content__text">
+            <p>This is a short photo-story about my hometown - Chisinau. It contains shots from different parts of the
+              city, which to most will seem like typical post-Soviet space, but I see echoes of a part of me in it.
+              There is a story in each of these partially destroyed locations. A story with unpleasant consequences, but
+              with a little hope for change...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-menu">
+        <div class="header-menu__container">
+          <div class="header-logo">
+            <a class="header-logo__link" href="">
+              <span class="header-logo__accent">HOMETOWN</span>
+            </a>
+          </div>
+
+          <div class="header-navbar">
+            <div class="header-navbar__btn">
+              <span class="header-navbar__btn-row"></span>
+              <span class="header-navbar__btn-row"></span>
+              <span class="header-navbar__btn-row"></span>
+            </div>gulp
+
+            <ol class="header-navbar__list">
+              <li class="header-navbar__item">
+                <a class="header-navbar__link" href="">Home</a>
+              </li>
+              <li class="header-navbar__item">
+                <a class="header-navbar__link" href="">Show more</a>
+              </li>
+              <li class="header-navbar__item">
+                <a class="header-navbar__link" href="">Contacts</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div id="slides-container" class="slides">
+        <div class="slide active"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+      </div>
+    </div>
+  </header>
+
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+
+</html>

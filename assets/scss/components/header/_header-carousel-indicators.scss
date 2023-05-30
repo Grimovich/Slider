@@ -1,0 +1,44 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.indicators {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  margin-bottom: 20px;
+  padding-top: 20px;
+
+  gap: $gap-x2;
+}
+
+.indicator {
+  display: flex;
+  justify-content: center;
+
+  padding: 0.25em;
+
+  cursor: pointer;
+  user-select: none;
+
+  color: $color-orange-light;
+
+  @include border-style;
+  @include md-min {
+    min-width: 80px;
+  }
+  @include md-sm {
+    min-width: 55px;
+  }
+
+  &.active {
+    @include border-style-stand;
+  }
+
+  &:hover {
+    @include border-style-stand;
+  }
+}

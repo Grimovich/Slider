@@ -1,0 +1,25 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-menu {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  padding: $gap 0;
+
+  background-color: rgba($color-white, 0.3);
+
+  @include box-shadow;
+
+  &__container {
+    display: grid;
+    align-items: center;
+
+    @extend %container;
+    gap: $gap;
+    grid-template-columns: auto 1fr;
+  }
+}

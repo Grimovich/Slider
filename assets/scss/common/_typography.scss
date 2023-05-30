@@ -1,0 +1,25 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.control {
+  font-size: 1.5rem;
+}
+
+.indicator {
+  font-size: 1.5rem;
+}
+.header-content__actions a {
+  font-size: 1.2em;
+}

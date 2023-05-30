@@ -1,0 +1,9 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header {
+  display: grid;
+  align-items: center;
+
+  height: 100vh;
+}
