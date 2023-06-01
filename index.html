@@ -50,7 +50,7 @@
                 <a class="header-navbar__link" href="">Home</a>
               </li>
               <li class="header-navbar__item">
-                <a class="header-navbar__link" href="">Show more</a>
+                <a class="header-navbar__link" href="">About</a>
               </li>
               <li class="header-navbar__item">
                 <a class="header-navbar__link" href="">Contacts</a>
@@ -60,8 +60,6 @@
         </div>
       </div>
 
-
-
       <div id="slides-container" class="slides">
         <div class="slide active"></div>
         <div class="slide"></div>
@@ -69,11 +67,24 @@
         <div class="slide"></div>
         <div class="slide"></div>
       </div>
+
+      <div id="controls-container" class="controls">
+        <div id="pause-btn" class="control control-pause"><i class="fas fa-pause-circle"></i></div>
+        <div id="prev-btn" class="control control-prev"><i class="fas fa-arrow-right"></i></div>
+        <div id="next-btn" class="control control-next"><i class="fas fa-arrow-right"></i></div>
+      </div>
+
+      <div id="indicators-container" class="indicators">
+        <div class="indicator active" data-slide-to="0"><i class="fas  fa-solid fa-minus"></i></div>
+        <div class="indicator" data-slide-to="1"><i class="fas  fa-solid fa-minus"></i></div>
+        <div class="indicator" data-slide-to="2"><i class="fas  fa-solid fa-minus"></i></div>
+        <div class="indicator" data-slide-to="3"><i class="fas  fa-solid fa-minus"></i></div>
+        <div class="indicator" data-slide-to="4"><i class="fas  fa-solid fa-minus"></i></div>
+      </div>
     </div>
   </header>
 
-  <script src="libs/jquery/dist/jquery.min.js"></script>
-  <script src="assets/js/main.js" type="module"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
