@@ -30,6 +30,7 @@
   &-pause {
     top: calc(70% - 20vh);
     left: 50%;
+    right: 50%;
 
     height: 0;
     padding: 0;
@@ -63,9 +64,9 @@
 
     &:hover {
       background: linear-gradient(
-      to right,
-      rgba($color-orange-light, 0.5),
-      rgba(202, 209, 167, 0.197)
+        to right,
+        rgba($color-orange-light, 0.5),
+        rgba(202, 209, 167, 0.197)
       );
       text-shadow: 0 0 10px #ffffff;
     }
@@ -93,9 +94,9 @@
 
     &:hover {
       background: linear-gradient(
-      to left,
-      rgba($color-orange-light, 0.5),
-      rgba(33, 243, 173, 0)
+        to left,
+        rgba($color-orange-light, 0.5),
+        rgba(33, 243, 173, 0)
       );
       text-shadow: 0 0 10px #ffffff;
     }
