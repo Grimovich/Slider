@@ -5,7 +5,6 @@ class SwipeCarousel extends Carousel {
   constructor(...args) {
     super(...args);
   }
-  // this.slidesContainer = this.slideItems[0].parentElement;
 
   _initListeners() {
     super._initListeners();
@@ -13,11 +12,6 @@ class SwipeCarousel extends Carousel {
     this.container.addEventListener('mousedown', this.swipeStart.bind(this));
     this.container.addEventListener('touchend', this.swipeEnd.bind(this));
     this.container.addEventListener('mouseup', this.swipeEnd.bind(this));
-    // super._initListeners();
-    // this.slidesContainer.addEventListener('touchstart', this.swipeStart.bind(this));
-    // this.slidesContainer.addEventListener('mousedown', this.swipeStart.bind(this));
-    // this.slidesContainer.addEventListener('touchend', this.swipeEnd.bind(this));
-    // this.slidesContainer.addEventListener('mouseup', this.swipeEnd.bind(this));
   }
 
   swipeStart(e) {
