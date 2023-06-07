@@ -29,5 +29,3 @@ SwipeCarousel.prototype.swipeEnd = function (e) {
   if (this.endPosX - this.startPosX > 100) this.prev();
   if (this.endPosX - this.startPosX < -100) this.next();
 };
-
-console.dir(SwipeCarousel);
