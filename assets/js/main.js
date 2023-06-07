@@ -89,24 +89,16 @@
   }
 
   function swipeStart(e) {
-    startPosX = e instanceof MouseEvent ? e.pageX : e.changedTouches[0].pageX;
-  // if (e instanceof MouseEvent) {
-  //   startPosX = e.pageX;
-  //   return;
-  // }
-  // if (e instanceof TouchEvent) {
-  //   startPosX = e.changedTouches[0].pageX;
-  // }
+    startPosX = e instanceof MouseEvent
+      ? e.pageX
+      : e.changedTouches[0].pageX;
   }
 
   function swipeEnd(e) {
-    endPosX = e instanceof MouseEvent ? e.pageX : e.changedTouches[0].pageX;
-    // if (e instanceof MouseEvent) {
-    //   endPosX = e.pageX;
-    // }
-    // if (e instanceof TouchEvent) {
-    //   endPosX = e.changedTouches[0].pageX;
-    // }
+    endPosX = e instanceof MouseEvent
+      ? e.pageX
+      : e.changedTouches[0].pageX;
+
 
     if (endPosX - startPosX > 100) prevHandler();
     if (endPosX - startPosX < -100) nextHandler();
@@ -131,11 +123,3 @@
 
   initApp();
 }());
-
-$(document).ready(() => {
-  $('.header-navbar__btn').on('click', function () {
-    // eslint-disable-next-line no-invalid-this
-    $(this).toggleClass('-active');
-    $('.header-navbar__list').toggleClass('-active');
-  });
-});
